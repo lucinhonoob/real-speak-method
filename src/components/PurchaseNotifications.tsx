@@ -29,21 +29,21 @@ export const PurchaseNotifications = () => {
   if (!active) return null;
 
   return (
-    <div className="fixed bottom-20 left-4 z-40 max-w-xs animate-slide-in-left">
-      <div className="glass rounded-xl shadow-card p-4 flex gap-3 items-start border-success/40">
-        <div className="w-10 h-10 rounded-full gradient-cta flex items-center justify-center flex-shrink-0">
-          <CheckCircle2 className="w-5 h-5 text-primary-foreground" />
+    <div className="fixed bottom-20 sm:bottom-4 left-3 sm:left-4 z-40 w-[calc(100vw-1.5rem)] max-w-xs animate-slide-in-left">
+      <div className="glass rounded-xl shadow-card p-3 sm:p-4 flex gap-2.5 sm:gap-3 items-start border-success/40">
+        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full gradient-cta flex items-center justify-center flex-shrink-0">
+          <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-sm font-semibold text-foreground">
+          <p className="text-xs sm:text-sm font-semibold text-foreground">
             {active.name} acabou de comprar! 🎉
           </p>
-          <p className="text-xs text-muted-foreground mt-0.5">{active.city}</p>
-          <p className="text-xs text-success mt-1 font-medium">{active.time}</p>
+          <p className="text-[11px] sm:text-xs text-muted-foreground mt-0.5">{active.city}</p>
+          <p className="text-[11px] sm:text-xs text-success mt-1 font-medium">{active.time}</p>
         </div>
         <button
           onClick={() => setActive(null)}
-          className="text-muted-foreground hover:text-foreground"
+          className="text-muted-foreground hover:text-foreground flex-shrink-0"
           aria-label="Fechar"
         >
           <X className="w-4 h-4" />

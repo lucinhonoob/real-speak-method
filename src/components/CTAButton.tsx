@@ -12,9 +12,9 @@ interface Props {
 
 export const CTAButton = ({ children, size = "default", pulse = false, className }: Props) => {
   const sizeClasses = {
-    default: "px-6 py-3 text-base",
-    lg: "px-8 py-4 text-lg",
-    xl: "px-10 py-5 text-xl md:text-2xl",
+    default: "px-5 py-3 text-sm sm:text-base",
+    lg: "px-6 py-3.5 text-base sm:text-lg",
+    xl: "px-6 py-4 text-base sm:text-lg md:text-xl lg:text-2xl sm:px-10 sm:py-5",
   };
   return (
     <a
@@ -22,14 +22,14 @@ export const CTAButton = ({ children, size = "default", pulse = false, className
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-flex items-center justify-center gap-2 gradient-cta text-primary-foreground font-bold rounded-xl shadow-cta uppercase tracking-wide transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_15px_50px_-5px_hsl(45_96%_56%_/_0.8)]",
+        "inline-flex items-center justify-center gap-2 gradient-cta text-primary-foreground font-bold rounded-xl shadow-cta uppercase tracking-wide transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_15px_50px_-5px_hsl(45_96%_56%_/_0.8)] text-center leading-tight",
         sizeClasses[size],
         pulse && "pulse-cta",
         className,
       )}
     >
-      {children}
-      <ArrowRight className="w-5 h-5" />
+      <span className="break-words">{children}</span>
+      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
     </a>
   );
 };

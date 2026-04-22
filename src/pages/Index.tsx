@@ -138,11 +138,17 @@ const Index = () => {
       </section>
 
       {/* DOR */}
-      <section className="py-12 sm:py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24 cv-auto">
         <div className="container px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-10 sm:mb-16">
             <div className="reveal order-2 md:order-1">
-              <img src={IMG.confused} alt="Professorzinho confuso" className="w-full max-w-[260px] sm:max-w-sm mx-auto" />
+              <OptimizedImage
+                src={IMG.confused}
+                alt="Professorzinho confuso"
+                width={400}
+                height={400}
+                className="w-full max-w-[260px] sm:max-w-sm mx-auto"
+              />
             </div>
             <div className="reveal order-1 md:order-2">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
@@ -174,7 +180,7 @@ const Index = () => {
       </section>
 
       {/* DIFERENCIAIS */}
-      <section className="py-12 sm:py-16 md:py-24 bg-card/40 relative">
+      <section className="py-12 sm:py-16 md:py-24 bg-card/40 relative cv-auto">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(188_56%_40%_/_0.15),transparent_70%)]" />
         <div className="container relative px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-16 reveal">
@@ -186,7 +192,13 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="reveal">
-              <img src={IMG.teaching} alt="Professorzinho ensinando" className="w-full max-w-[280px] sm:max-w-md mx-auto animate-float" />
+              <OptimizedImage
+                src={IMG.teaching}
+                alt="Professorzinho ensinando"
+                width={500}
+                height={500}
+                className="w-full max-w-[280px] sm:max-w-md mx-auto animate-float"
+              />
             </div>
             <div className="space-y-4 sm:space-y-5">
               {[
@@ -214,7 +226,7 @@ const Index = () => {
       </section>
 
       {/* PROVA SOCIAL */}
-      <section id="social-proof" className="py-12 sm:py-16 md:py-24">
+      <section id="social-proof" className="py-12 sm:py-16 md:py-24 cv-auto">
         <div className="container px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12 reveal">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-8 sm:mb-10">
@@ -244,7 +256,13 @@ const Index = () => {
 
           <div className="reveal max-w-5xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden border border-border/50 shadow-card">
-              <img src={IMG.testimonials} alt="Depoimentos de alunos" className="w-full" />
+              <OptimizedImage
+                src={IMG.testimonials}
+                alt="Depoimentos de alunos"
+                width={1200}
+                height={800}
+                className="w-full"
+              />
             </div>
             <div className="flex flex-wrap items-center justify-center gap-1 mt-6">
               {[...Array(5)].map((_, i) => (
@@ -257,7 +275,7 @@ const Index = () => {
       </section>
 
       {/* TRANSFORMAÇÃO */}
-      <section className="py-12 sm:py-16 md:py-24 bg-card/40">
+      <section className="py-12 sm:py-16 md:py-24 bg-card/40 cv-auto">
         <div className="container px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="reveal">

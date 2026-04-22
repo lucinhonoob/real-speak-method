@@ -308,7 +308,7 @@ const Index = () => {
       </section>
 
       {/* O QUE VOCÊ RECEBE */}
-      <section className="py-12 sm:py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24 cv-auto">
         <div className="container px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12 reveal">
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -375,7 +375,7 @@ const Index = () => {
       </section>
 
       {/* COMPARATIVO */}
-      <section className="py-12 sm:py-16 md:py-24 bg-card/40">
+      <section className="py-12 sm:py-16 md:py-24 bg-card/40 cv-auto">
         <div className="container max-w-5xl px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12 reveal">
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -458,7 +458,7 @@ const Index = () => {
       </section>
 
       {/* EXEMPLOS PRÁTICOS */}
-      <section className="py-12 sm:py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24 cv-auto">
         <div className="container px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12 reveal">
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl max-w-3xl mx-auto">

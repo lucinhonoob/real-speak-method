@@ -4,6 +4,7 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 import { LiveViewers } from "@/components/LiveViewers";
 import { PurchaseNotifications } from "@/components/PurchaseNotifications";
 import { CTAButton } from "@/components/CTAButton";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import {
   CheckCircle2,
   XCircle,
@@ -120,7 +121,14 @@ const Index = () => {
           </div>
           <div className="relative animate-float">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-            <img src={IMG.hero} alt="Professorzinho SpeakAI" className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md mx-auto drop-shadow-2xl" />
+            <OptimizedImage
+              src={IMG.hero}
+              alt="Professorzinho SpeakAI"
+              width={400}
+              height={400}
+              priority
+              className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md mx-auto drop-shadow-2xl"
+            />
           </div>
         </div>
 

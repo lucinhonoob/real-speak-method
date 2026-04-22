@@ -128,4 +128,27 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Performance: skip rendering offscreen sections */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 800px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-gradient,
+  .pulse-cta,
+  .animate-pulse,
+  .animate-fade-in,
+  .animate-slide-in-left {
+    animation: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  html { scroll-behavior: auto; }
 }

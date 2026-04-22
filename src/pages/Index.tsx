@@ -301,7 +301,7 @@ const Index = () => {
               </ul>
             </div>
             <div className="reveal">
-              <img src={IMG.celebrating} alt="Professorzinho comemorando" className="w-full max-w-[280px] sm:max-w-md mx-auto animate-float" />
+              <OptimizedImage src={IMG.celebrating} alt="Professorzinho comemorando" width={500} height={500} className="w-full max-w-[280px] sm:max-w-md mx-auto animate-float" />
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center max-w-6xl mx-auto">
             <div className="reveal">
-              <img src={IMG.bonus} alt="Conteúdo SpeakAI" className="w-full max-w-[280px] sm:max-w-md mx-auto" />
+              <OptimizedImage src={IMG.bonus} alt="Conteúdo SpeakAI" width={500} height={500} className="w-full max-w-[280px] sm:max-w-md mx-auto" />
             </div>
             <div className="space-y-4 reveal">
               {[

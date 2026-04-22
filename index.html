@@ -3,29 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c2340" />
     <title>SpeakAI Method - Destrave o Inglês e Fale Naturalmente</title>
     <meta name="description" content="Aprenda inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por apenas R$57.">
     <meta name="author" content="SpeakAI Method" />
 
-    
-    
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://i.imgur.com/j8m8zcz.jpg">
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://i.imgur.com/j8m8zcz.jpg">
+    <meta property="og:title" content="SpeakAI Method - Destrave o Inglês e Fale Naturalmente">
+    <meta name="twitter:title" content="SpeakAI Method - Destrave o Inglês e Fale Naturalmente">
+    <meta property="og:description" content="Aprenda inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por apenas R$57.">
+    <meta name="twitter:description" content="Aprenda inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por apenas R$57.">
 
+    <!-- Performance: preconnect to critical origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://i.imgur.com" crossorigin />
+    <link rel="dns-prefetch" href="https://i.imgur.com" />
+    <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
 
+    <!-- Preload hero LCP image (640px variant) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://i.imgur.com/j8m8zczl.jpg"
+      imagesrcset="https://i.imgur.com/j8m8zczm.jpg 320w, https://i.imgur.com/j8m8zczl.jpg 640w"
+      imagesizes="(max-width: 640px) 280px, 400px"
+      fetchpriority="high"
+    />
+
+    <!-- Fonts: only weights actually used -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Tracking pixels (Utmify) — moved to end of body to not block render -->
     <script>
       window.pixelId = "6952d5f7e55fa9e99b678ddd";
       var a = document.createElement("script");
       a.setAttribute("async", "");
       a.setAttribute("defer", "");
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-      document.head.appendChild(a);
+      document.body.appendChild(a);
     </script>
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -33,14 +57,5 @@
       async
       defer
     ></script>
-    <meta property="og:title" content="SpeakAI Method - Destrave o Inglês e Fale Naturalmente">
-  <meta name="twitter:title" content="SpeakAI Method - Destrave o Inglês e Fale Naturalmente">
-  <meta property="og:description" content="Aprenda inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por apenas R$57.">
-  <meta name="twitter:description" content="Aprenda inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por apenas R$57.">
-</head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

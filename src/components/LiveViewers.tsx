@@ -3,8 +3,20 @@ import { Eye } from "lucide-react";
 
 export const LiveViewers = () => {
   const [count, setCount] = useState(() => Math.floor(Math.random() * 43) + 47);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Defer mount until browser is idle (don't compete with LCP)
+    const ric = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 3000));
+    const handle = ric(() => setMounted(true), { timeout: 5000 });
+    return () => {
+      const cic = (window as any).cancelIdleCallback;
+      if (cic) cic(handle);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
     const id = setInterval(() => {
       setCount((c) => {
         const delta = Math.floor(Math.random() * 7) - 3;
@@ -13,7 +25,9 @@ export const LiveViewers = () => {
       });
     }, 8000);
     return () => clearInterval(id);
-  }, []);
+  }, [mounted]);
+
+  if (!mounted) return null;
 
   return (
     <div className="fixed bottom-20 sm:bottom-4 right-3 sm:right-4 z-40 glass rounded-full px-3 py-1.5 sm:px-4 sm:py-2 flex items-center gap-1.5 sm:gap-2 shadow-card animate-fade-in max-w-[calc(100vw-1.5rem)]">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useReveal } from "@/hooks/useReveal";
+import { useTracking } from "@/hooks/useTracking";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { LiveViewers } from "@/components/LiveViewers";
 import { PurchaseNotifications } from "@/components/PurchaseNotifications";
@@ -58,7 +59,13 @@ const useCountUp = (target: number, duration = 2000, start = false) => {
 
 const Index = () => {
   useReveal();
+  const { track } = useTracking();
   const [statsVisible, setStatsVisible] = useState(false);
+
+  useEffect(() => {
+    track("ViewContent");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const students = useCountUp(60000, 2200, statsVisible);
   const countries = useCountUp(12, 1500, statsVisible);
 

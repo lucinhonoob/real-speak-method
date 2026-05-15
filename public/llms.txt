@@ -1,0 +1,9 @@
+# SpeakAI Method
+
+> Curso de inglês com frases reais, tradução e pronúncia aportuguesada. Mais de 60.000 alunos. Acesso vitalício por R$57.
+
+SpeakAI Method é uma landing page de vendas para um método de aprendizado de inglês focado em conversação prática, com pronúncia escrita em português para facilitar a fala desde o primeiro dia.
+
+## Pages
+
+- [Home](/): Página de vendas do SpeakAI Method com benefícios, depoimentos, garantia e oferta.
